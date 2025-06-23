@@ -48,6 +48,7 @@ const Hero = () => {
 
     return (
         <section
+            id='home'
             className="h-screen bg-[#F5F2FF] bg-no-repeat font-jost relative xl:px-[10%] px-[5%] hero-bg"
 
         >

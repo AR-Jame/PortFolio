@@ -11,38 +11,43 @@ const About = () => {
                 trigger: ".containerDiv",
                 start: 'top top',
                 pin: true,
-                scrub: 1,
+                scrub: 1.5,
                 end: "+=3000",
-                //snap: 1 / (sections.length - 1),
                 markers: true,
             }
         });
-
-
     }, [])
     return (
         <section className="overflow-x-hidden">
             <section className="containerDiv w-[300vw] flex">
                 <section className="h-screen w-screen flex justify-center items-center">
                     <div>
-                        <p className="text-6xl font-jost">Personal info</p>
-                        <div className="text-2xl">
-                            <p>Name: Abdur Rahman</p>
-                            <p>Age: 16</p>
-                            <p>Location: Dhaka, Bangladesh</p>
+                        <p className="text-6xl font-ubuntu mb-3 border-b-4 border-[#cacaca] pb-2">Personal info</p>
+                        <div className="text-2xl font-jost text-[#363636]">
+                            <p> --- Name: Abdur Rahman</p>
+                            <p> --- Age: 16</p>
+                            <p> --- Location: Dhaka, Bangladesh</p>
                         </div>
                     </div>
                 </section>
                 <section className="h-screen w-screen flex justify-center items-center">
                     <div>
-                        <p className="text-6xl font-jost">Personal info</p>
-                        <p className="text-2xl font-ubuntu text-[#363636]">Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. <br /> adipisicing elit. Natus veniam quisquam sequi, obcaecati fugiat non.</p>
+                        <p className="text-6xl font-ubuntu mb-3 border-b-4 border-[#cacaca] pb-2">Education</p>
+                        <div className="text-2xl font-jost text-[#363636]">
+                            <p> --- School/Madrasah: Tamirul Millat Kamil Madrasha</p>
+                            <p> --- Class: 10</p>
+                            <p> --- Language: Bangla | English | Arabic</p>
+                        </div>
                     </div>
                 </section>
                 <section className="h-screen w-screen flex justify-center items-center">
                     <div>
-                        <p className="text-6xl font-jost">Personal info</p>
-                        <p className="text-2xl font-ubuntu text-[#363636]">Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. <br /> adipisicing elit. Natus veniam quisquam sequi, obcaecati fugiat non.</p>
+                        <p className="text-6xl font-ubuntu mb-3 border-b-4 border-[#cacaca] pb-2">About Me</p>
+                        <div className="text-2xl font-jost text-[#363636] ">
+                           <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Minima quaerat itaque maxime cupiditate reiciendis <br /> aperiam quas  rem necessitatibus enim eius delectus nam quae placeat vel, <br /> facilis ex ratione, maiores recusandae?
+                           </p>
+                        </div>
                     </div>
                 </section>
             </section>
