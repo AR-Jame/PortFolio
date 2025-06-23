@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-ubuntu: "Ubuntu", "sans-serif";
+    --font-jost: 'Jost';
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+@utility hero-bg {
+    background-image: url("/circle 2.svg");
+    background-size: 70vw auto;
+    background-position: center 80%;
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-bg {
+        background-size: 100vw auto;
+        background-position: center 80%;
+    }
+}
+
+.glass-bg {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.8px);
+    -webkit-backdrop-filter: blur(12.8px);
+}
