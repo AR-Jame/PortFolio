@@ -54,10 +54,10 @@ const Hero = () => {
         >
             <div className='flex justify-between items-center h-full'>
                 <div className='relative'>
-                    <p className='text-2xl intro pb-5 lg:pb-0'>hi, I am Abdur Rahman -------</p>
+                    <h1 className='text-2xl intro pb-5 lg:pb-0'>hi, I am Abdur Rahman -------</h1>
                     <path stroke="#000" id='svgPath' d="M116.5 347C4.887 256.672-18.193 181.445 15 1" />
                     <img id='bracket' src={bracket} width={150} className='absolute -top-28 -left-22 -rotate-[30deg] opacity-60' alt="Code Block" />
-                    <p className='text-4xl pb-8 intro'><span className='text-[#AB9FF2]'>MERN</span> Stack Web Developer</p>
+                    <h2 className='text-4xl pb-8 intro'><span className='text-[#AB9FF2]'>MERN</span> Stack Web Developer</h2>
                     <div className='flex gap-4 intro'>
                         <Button>DOWNLOAD RESUME</Button>
                         <Button>VIEW ON GITHUB</Button>

@@ -165,7 +165,7 @@ export const techStack = [
     },
     {
         id: 3,
-        title: 'Currently exploring',
+        title: 'Currently exploring & want to explore',
         elements: [
             {
                 id: 1,

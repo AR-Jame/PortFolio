@@ -12,7 +12,7 @@ const TechStack = () => {
                     trigger: section,
                     start: 'top top',
                     end: '30% top',
-                    scrub: true,
+                    scrub: 1.5,
                     pin: true,
                     pinSpacing: false,
                     markers: true,
@@ -33,11 +33,11 @@ const TechStack = () => {
                             <div className="flex px-[10%] items-center h-full">
                                 <div className='w-full'>
                                     <p className="text-4xl font-jost"> --- {stack.title}</p>
-                                    <div className='flex gap-8 lg:pl-[10%] mt-16'>
+                                    <div className='flex flex-wrap justify-center lg:justify-start gap-8 lg:pl-[10%] mt-16'>
                                         {
                                             stack.elements.map(element => (
                                                 <div className='flex flex-col items-center justify-center'>
-                                                    <img src={element.img} width={90} />
+                                                    <img src={element.img} width={90} className='w-20 md:w-[70px] lg:w-[90px]'/>
                                                     <p>{element.text}</p>
                                                 </div>
                                             ))

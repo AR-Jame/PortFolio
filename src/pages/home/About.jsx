@@ -18,7 +18,7 @@ const About = () => {
         });
     }, [])
     return (
-        <section className="overflow-x-hidden border-b">
+        <section className="overflow-x-hidden">
             <section className="containerDiv w-[300vw] flex bg-[#faf6f1]">
                 <section className="h-screen w-screen flex justify-center items-center">
                     <div>
