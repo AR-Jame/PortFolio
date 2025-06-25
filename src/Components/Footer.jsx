@@ -1,14 +1,7 @@
 const Footer = () => {
     return (
-        <div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <div className="py-80 rounded-t-[50px] bg-[#F5F2FF]">
+            
             This is the footer
         </div>
     );

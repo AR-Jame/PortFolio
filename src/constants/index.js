@@ -196,3 +196,49 @@ export const techStack = [
         ]
     },
 ]
+
+
+export const contact = [
+    {
+        text: 'ar.jame333@gmail.com',
+        image: '/contact/mail.png'
+    },
+    {
+        text: 'Matuail, Jatrabari, Dhaka, Bangladesh',
+        image: '/contact/location.svg'
+    },
+]
+
+export const contactCards = [
+    {
+        heading: 'Hiring',
+        title: 'Offer a Job ?',
+        body: 'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit. Voluptatibus, aspernatur.',
+        image: '/contact/job offer.png',
+        primary: '#ffc665',
+        secondary: '#fff3de',
+        ternary: '#fff3de23',
+        scaling: false
+    },
+    {
+        heading: 'Innovative',
+        title: 'build something to reshape the future?',
+        body: 'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit. Voluptatibus, aspernatur.',
+        image: '/contact/innovation.png',
+        primary: '#ff904f',
+        secondary: '#ffb993ce',
+        ternary: '#ffb993ce',
+        scaling: true
+    },
+    {
+        heading: 'Networking',
+        title: 'Connect with me?',
+        body: 'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit. Voluptatibus, aspernatur.',
+        image: '/contact/connect.png',
+        primary: '#d398ff',
+        secondary: '#f1dfff',
+        ternary: '#debdf511',
+        scaling: false
+    },
+
+]
