@@ -4,7 +4,7 @@ const Projects = () => {
         <div className="px-[10%]">
             <p className="text-center font-jost text-5xl my-20">Projects</p>
             <div>
-                <div className='flex flex-col justify-between items-center'>
+                <div className='flex flex-col xl:flex-row justify-between items-center'>
                     <img src={project} width={'40%'} className='flex-1/2' />
                     <div className='flex-1/2 font-jost'>
                         <p className='text-4xl'>BICS</p>
