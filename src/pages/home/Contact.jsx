@@ -19,13 +19,13 @@ const Contact = () => {
     }, [])
     return (
         <>
-            <section className="pt-30 px-[10%]">
+            <section className="pt-30 2xl:px-[10%] px-[5%]">
                 <p className="text-center font-jost text-6xl my-20">Want To</p>
-                <div className="flex gap-12 contact">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center auto-fill gap-12 contact">
                     {
                         contactCards.map(card => (
                             <div
-                                className={`flex gap-7 flex-1/3 items-center p-10 rounded-2xl`}
+                                className={`flex gap-7 flex-1/3 items-center lg:p-10 p-7 rounded-2xl ${card.scaling && 'scale-105'}`}
                                 style={{ backgroundImage: `linear-gradient(${card.secondary}, ${card.ternary})` }}
                             >
                                 <div className="font-jost">
@@ -35,8 +35,8 @@ const Contact = () => {
                                     >
                                         {card?.heading}
                                     </p>
-                                    <p className="text-3xl font-ubuntu py-4">{card?.title}</p>
-                                    <p className="text-xl text-[#474747]">{card?.body}</p>
+                                    <p className="lg:text-3xl text-2xl font-ubuntu py-4">{card?.title}</p>
+                                    <p className="lg:text-xl text-lg text-[#474747]">{card?.body}</p>
                                 </div>
                                 <div>
                                     <img src={card?.image} width={500} />
@@ -46,24 +46,25 @@ const Contact = () => {
                     }
                 </div>
             </section >
-            <section className="px-[10%] pb-52 pt-10">
-                <p className="text-center font-jost text-6xl my-16 pb-10">Let's Talk together</p>
-                <div className="flex justify-around">
+            <section className="lg:px-[10%] px-[5%] pb-52 pt-10">
+                <p className="text-center font-jost lg:text-6xl text-4xl my-16 pb-10">Let's Talk together</p>
+                <div className="flex flex-col gap-7 lg:flex-row justify-around items-center">
                     <div className="font-jost">
 
                         {
                             contact.map(item => (
                                 <div className="flex items-center gap-4">
                                     <img src={item?.image} width={50} />
-                                    <p className="text-xl">{item?.text}</p>
+                                    <p className="text-base lg:text-xl">{item?.text}</p>
                                 </div>
                             ))
                         }
                     </div>
-                    <div className="h-24 w-0.5 bg-black" />
-                    <div className="flex gap-5">
-                        <img className="hover:scale-90 cursor-pointer transition-all" src='/contact/Facebook.png' width={100} />
-                        <img className="hover:scale-90 cursor-pointer transition-all" src='/contact/linkedin.png' width={100} />
+                    <div className="h-20 w-0.5 bg-black hidden lg:block" />
+                    <p className="text-xl font-jost lg:hidden">Or talk via</p>
+                    <div className="flex gap-10">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61552245442048"><img className="hover:scale-90 cursor-pointer transition-all w-[70px]" src='/contact/Facebook.png' width={90} /></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/abdur-rahman-1a3495340"><img className="hover:scale-90 cursor-pointer transition-all w-[70px]" src='/contact/linkedin.png' width={90} /></a>
                     </div>
                 </div>
             </section>

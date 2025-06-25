@@ -15,11 +15,12 @@ const TechStack = () => {
                     scrub: 1.5,
                     pin: true,
                     pinSpacing: false,
-                    markers: true,
+                    // markers: true,
                 },
             }).to(section, {
                 opacity: 0,
-                scale: 1.2,
+                scale: .9,
+                x: -200
             });
         });
     }, [])

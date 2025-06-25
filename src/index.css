@@ -11,6 +11,11 @@
     scroll-behavior: smooth;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 @utility hero-bg {
     background-image: url("/circle 2.svg");
     background-size: 70vw auto;

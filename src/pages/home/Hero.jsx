@@ -60,7 +60,8 @@ const Hero = () => {
                     <h2 className='text-4xl pb-8 intro'><span className='text-[#AB9FF2]'>MERN</span> Stack Web Developer</h2>
                     <div className='flex gap-4 intro'>
                         <Button>DOWNLOAD RESUME</Button>
-                        <Button>VIEW ON GITHUB</Button>
+                        <a href="https://github.com/AR-Jame" target='_blank'><Button>VIEW ON GITHUB</Button></a>
+
                     </div>
                 </div>
                 <div className='hidden lg:block codeBlock'>

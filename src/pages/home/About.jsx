@@ -45,8 +45,7 @@ const About = () => {
                         <p className="text-3xl md:text-6xl font-ubuntu mb-3 border-b-4 border-[#cacaca] pb-2 inline-block">About Me</p>
                         <div className="text-xl md:text-2xl font-jost text-[#363636] ">
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br /> Minima quaerat itaque maxime cupiditate reiciendis <br /> aperiam quas  rem necessitatibus enim eius delectus nam quae placeat vel, <br /> facilis ex ratione, maiores recusandae?
-                            </p>
+                                I'm a 16-year-old teenager who’s curious about how things work — especially on the web. I spend a lot of time learning web development and building cool projects, but I also enjoy reading, exploring creative ideas, and imagining the future I want to build.                            </p>
                         </div>
                     </div>
                 </section>
