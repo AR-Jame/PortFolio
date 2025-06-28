@@ -36,10 +36,10 @@ const Contact = () => {
                                         {card?.heading}
                                     </p>
                                     <p className="lg:text-3xl text-2xl font-ubuntu py-4">{card?.title}</p>
-                                    <p className="lg:text-xl text-lg text-[#474747]">{card?.body}</p>
+                                    <p className="lg:text-lg text-base text-[#474747]">{card?.body}</p>
                                 </div>
                                 <div>
-                                    <img src={card?.image} width={500} />
+                                    <img src={card?.image} width={500} height={500} />
                                 </div>
                             </div>
                         ))

@@ -3,15 +3,52 @@ import codeBox from '../../assets/bracket(1).png'
 import bracket from '../../assets/bracket.png'
 import Button from '../../Components/button/Button';
 import gsap from 'gsap';
+import { SplitText } from 'gsap/all';
+// import room from '/room.png'
+// import roomWhite from '/room white.png'
+// import roomFianl from '/room final.png'
+// import roomWood from '/wood edit.jpg'
 const Hero = () => {
 
     useGSAP(() => {
-        gsap.from('.intro', {
-            y: 40,
+        // gsap.from('.intro', {
+        //     y: 40,
+        //     opacity: 0,
+        //     stagger: .4,
+        //     ease: 'power1.out'
+        // });
+
+        // const mainHead = SplitText.create('.mainHead', { type: 'chars' })
+
+        // gsap.from(mainHead.chars, {
+        //     duration: 0.2,
+        //     y: 50,       // animate from 100px below
+        //     autoAlpha: 0, // fade in from opacity: 0 and visibility: hidden
+        //     stagger: 0.05,
+        //     ease: 'expo.out' // 0.05 seconds between each
+        // });
+
+
+        const mainHead = new SplitText('.mainHead', { type: 'words' });
+        const welcome = new SplitText('.welcome', { type: 'chars' });
+
+        gsap.from(mainHead.words, {
+            x: 60,
+            duration: 1.8,
+            ease: 'expo.out',
+            stagger: 0.3,
+            autoAlpha: 0,
+            opacity: 0
+        })
+
+        gsap.from(welcome.chars, {
+            stagger: 0.1,
+            // autoAlpha: 0,
             opacity: 0,
-            stagger: .4,
-            ease: 'power1.out'
-        });
+            delay: 1,
+            ease: 'bounce.in' //TODO: change the ease method
+        })
+
         gsap.from('#bracket', {
             motionPath: {
                 path: '#svgPath',
@@ -49,15 +86,15 @@ const Hero = () => {
     return (
         <section
             id='home'
-            className="h-screen bg-[#F5F2FF] bg-no-repeat font-jost relative xl:px-[10%] px-[5%] hero-bg"
+            className="h-screen bg-[#F5F2FF] bg-no-repeat font-jost relative xl:px-[15%] px-[5%] hero-bg"
 
         >
             <div className='flex justify-between items-center h-full'>
                 <div className='relative'>
-                    <h1 className='text-2xl intro pb-5 lg:pb-0'>hi, I am Abdur Rahman -------</h1>
+                    <h1 className='text-2xl intro pb-5 lg:pb-2'>hi, I am Abdur Rahman -------</h1>
                     <path stroke="#000" id='svgPath' d="M116.5 347C4.887 256.672-18.193 181.445 15 1" />
                     <img id='bracket' src={bracket} width={150} className='absolute -top-28 -left-22 -rotate-[30deg] opacity-60' alt="Code Block" />
-                    <h2 className='text-4xl pb-8 intro'><span className='text-[#AB9FF2]'>MERN</span> Stack Web Developer</h2>
+                    <h2 className='text-7xl font-medium pb-8 intro text-[#414040] mainHead'><span className='text-[#AB9FF2]'>Full</span> Stack <br /> Web Developer</h2>
                     <div className='flex gap-4 intro'>
                         <Button>DOWNLOAD RESUME</Button>
                         <a href="https://github.com/AR-Jame" target='_blank'><Button>VIEW ON GITHUB</Button></a>
@@ -65,12 +102,12 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='hidden lg:block codeBlock'>
-                    <img src={codeBox} alt="Code Block" className='rotate-y-180 opacity-70 pb-1' />
-                    <img src={codeBox} alt="Code Block" className='rotate-y-180 opacity-70' />
+                    <img src={codeBox} alt="Code Block" className='rotate-y-180 opacity-85 pb-1' />
+                    <img src={codeBox} alt="Code Block" className='rotate-y-180 opacity-85 pb-1' />
 
                 </div>
             </div>
-            <p className='absolute top-[90%] right-[5%] text-2xl'>Welcome to my desk ......</p>
+            <p className='absolute top-[90%] right-[5%] text-2xl lg:text-4xl welcome'>Welcome to my desk ......</p>
         </section>
     );
 };

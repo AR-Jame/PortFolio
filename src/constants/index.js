@@ -212,7 +212,7 @@ export const contact = [
 export const contactCards = [
     {
         heading: 'Hiring',
-        title: 'Offer a Job ?',
+        title: 'Offer a Job opportunity?',
         body: 'Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet. adipisicing elit. Voluptatibus, aspernatur.',
         image: '/contact/job offer.png',
         primary: '#ffc665',
@@ -237,7 +237,7 @@ export const contactCards = [
         image: '/contact/connect.png',
         primary: '#d398ff',
         secondary: '#f1dfff',
-        ternary: '#debdf511',
+        ternary: '#debdf505',
         scaling: false
     },
 

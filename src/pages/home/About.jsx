@@ -27,6 +27,8 @@ const About = () => {
                             <p> --- Name: Abdur Rahman</p>
                             <p> --- Age: 16</p>
                             <p> --- Location: Dhaka, Bangladesh</p>
+                            <p> --- Email: ar.jame333@gmail.com</p>
+                            <p> --- Phone: 01912025223</p>
                         </div>
                     </div>
                 </section>
@@ -43,9 +45,10 @@ const About = () => {
                 <section className="h-screen w-screen flex justify-center items-center">
                     <div className="md:px-[10%] px-[3%]">
                         <p className="text-3xl md:text-6xl font-ubuntu mb-3 border-b-4 border-[#cacaca] pb-2 inline-block">About Me</p>
-                        <div className="text-xl md:text-2xl font-jost text-[#363636] ">
+                        <div className="text-xl md:text-2xl font-jost text-[#363636] max-w-lg">
                             <p>
-                                I'm a 16-year-old teenager who’s curious about how things work — especially on the web. I spend a lot of time learning web development and building cool projects, but I also enjoy reading, exploring creative ideas, and imagining the future I want to build.                            </p>
+                                I'm a 16-year-old teenager who’s curious about how things work — especially on the web.  I spend a lot of time learning web development and building cool projects, <br />  but I also enjoy reading, exploring creative ideas, and imagining the future I want to build.
+                            </p>
                         </div>
                     </div>
                 </section>
